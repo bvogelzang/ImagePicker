@@ -150,7 +150,7 @@ open class ImagePickerController: UIViewController {
     galleryView.collectionView.contentInset = UIEdgeInsets.zero
 
     galleryView.frame = CGRect(x: 0,
-                               y: totalSize.height - bottomContainer.frame.height - galleryHeight,
+                               y: self.view.bounds.height - bottomContainer.frame.height - galleryHeight,
                                width: totalSize.width,
                                height: galleryHeight)
     galleryView.updateFrames()
