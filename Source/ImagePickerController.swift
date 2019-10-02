@@ -71,9 +71,9 @@ open class ImagePickerController: UIViewController {
 
   @objc open weak var delegate: ImagePickerDelegate?
   open var stack = ImageStack()
-  open var imageLimit = 0
+  @objc open var imageLimit = 0
   open var preferredImageSize: CGSize?
-  open var startOnFrontCamera = false
+  @objc open var startOnFrontCamera = false
   var totalSize: CGSize { return UIScreen.main.bounds.size }
   var initialFrame: CGRect?
   var initialContentOffset: CGPoint?
